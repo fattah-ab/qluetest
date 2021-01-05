@@ -1,0 +1,11 @@
+SELECT date AS Day 
+FROM assesment
+WHERE date >= '2011-01-2011' AND date <= '2011-06-30' AND score > 0
+GROUP BY date;
+
+SELECT date AS day,
+sum(case when score >= 0 then 1 else 0 end) AS num_pos_score,
+sum(case when score < 0 then 1 else 0 end) AS num_neg_score
+FROM assesment
+WHERE date > '2011-03-01' AND date < '2011-04-30'
+GROUP BY trans_id;
