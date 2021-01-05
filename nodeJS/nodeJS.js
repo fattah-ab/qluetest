@@ -13,5 +13,5 @@ function getPrimes(n) {
     }
     return m;
   }
-  console.log(getPrimes( 5 )); // a prime
+  console.log(getPrimes( 5 )); 
   console.log(getPrimes( 10 ));
